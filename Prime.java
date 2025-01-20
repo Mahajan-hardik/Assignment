@@ -16,7 +16,7 @@ public class Prime{
         
 
         if(count == 0){
-           System.out.println(i + "is prime");
+           System.out.println(i );
 
         }
     }}
