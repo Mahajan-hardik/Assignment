@@ -1,0 +1,31 @@
+Design (Online) chess game, 
+
+Threading Cocept:
+Handling player inputs asynchronously (e.g., moves made by the player).
+Running the AI(engine) for moves (if playing against the computer).
+Managing the game state and updating the UI concurrently, also the interface should offer clear visual cues for moves.
+
+
+We will use the following design patterns in this:
+
+Singleton Pattern
+Ensures only one instance of the chess game exists.
+
+Observer Pattern
+Updates game state or UI automatically when moves are made.
+
+Strategy Pattern
+Define unique  movement behaviors for each piece(eg. bishop moves diagonally).
+
+Command Pattern
+Encapsulates a player’s move into an object (command), allowing queuing, undo, and redo functionality.
+
+State Pattern
+Manages the game’s states (active, checkmate, stalemate), changing behavior based on the current game state.
+
+Factory Method Pattern
+Creates chess pieces (e.g., King, Queen, etc.) dynamically when setting up the board.
+
+Builder Pattern
+Simplifies creating specific board setups(eg. resuming saved games).
+ 
